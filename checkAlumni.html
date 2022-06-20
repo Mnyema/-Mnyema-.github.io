@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Alumni</title>
+    <link rel="stylesheet" href="myCSS.css">
+</head>
+<body class="checkA">
+    <div class="meme">
+    <h1>Do you have a User Account?</h1>
+    <button class="c"><a href=regLogIn.html>Yes, I do</a></button>
+    <button class="c"><a href=Register.html>No, I'd like to create one</a></button>
+</div>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
+            <li><a href="Alumni.html">ALUMNI</a></li>
+            <li><a href="Staff.html">STAFF</a></li>
+            <li><a href="Tr.html">CONTACTS</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/IMG_20220611_171218.jpg" id="menu">
+</div>
+<script>
+    var menuBtn= document.getElementById("menuBtn")
+    var sideNav= document.getElementById("sideNav")
+    var menu= document.getElementById("menu")
+    sideNav.style.right=="-250px"
+    menuBtn.onclick=function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right="0";
+            menu.src="images/IMG_20220611_234657.jpg";
+        }
+        else {
+            sideNav.style.right="-250px";
+            menu.src="images/IMG_20220611_171218.jpg";
+        }
+    }
+</script>
+</body>
+</html>

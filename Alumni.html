@@ -1,0 +1,142 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni MGHS</title>
+    <link rel="stylesheet" href="alumni.css">
+    <link rel="stylesheet" href="myCSS.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+    <body class="alumni">
+    <div class="palu">
+        <p class="mg">Marian Girls' Alumni!</p>
+        <div class="act"><i>As an active Marian graduate you can<br> positively impact today's students, 
+            strengthen your professional<br> network, increase the  value of your knowledge 
+            and have some fun.</i></div>
+    </div>
+        <form method="post" class="alu" action="Alumni.php">
+            <p class="create">Create Alumnus account here</p>
+            <div class="table">
+                <div class="name">
+         <label>Alumnus Name</label><br>
+<input type="text" name="name" id="name" required>
+</div>
+<div class="yoe">
+<label>Year of enrolment</label><br>
+<input type="number" name="yoe" min="1997" max="2022" id="yoe" required>
+</div>
+<div class="yog">
+<label>Year of graduation</label><br>
+<input type="number" name="yog" min="1997" max="2022" id="yog" required>
+</div>
+<div class="hae">
+<label>Headmaster / Mistress at enrolment </label><br>
+<select name="hae" id="hae" required>
+    <option></option>
+    <option value="Mrs. Beatrice Libaba">Mrs. Beatrice Libaba</option>
+    <option value="Mr. Ally Khamis">Mr. Ally Khamis </option>
+    <option value="Mr. Alexander Mlai">Mr. Alexander Mlai</option>
+    <option value="Mrs. Flora Mapunda">Mrs. Flora Mapunda</option>
+    <option value="Mrs. Lightness Massawe">Mrs. Lightness Massawe</option>
+    <option value="Mr. George Luvanda">Mr. George Luvanda</option>
+</select>
+</div>
+<div class="hag">
+<label>Headmaster / Mistress at graduation</label><br>
+<select name="hag" required id="hag">
+    <option></option>
+    <option value="Mrs. Beatrice Libaba">Mrs. Beatrice Libaba</option>
+    <option value="Mr. Ally Khamis">Mr. Ally Khamis </option>
+    <option value="Mr. Alexander Mlai">Mr. Alexander Mlai</option>
+    <option value="Mrs. Flora Mapunda">Mrs. Flora Mapunda</option>
+    <option value="Mrs. Lightness Massawe">Mrs. Lightness Massawe</option>
+    <option value="Mr. George Luvanda">Mr. George Luvanda</option>
+</select>
+</div>
+<div class="tag">
+<label>Famous teacher at graduation</label><br>
+<select name="tag" required id="tag">
+    <option></option>
+    <option value="Mrs. Beatrice Libaba">Mrs. Beatrice Libaba</option>
+    <option value="Mr. Ally Mgaza">Mr. Ally Mgaza </option>
+    <option value="Mr. Alexander Mlai">Mr. Alexander Mlai</option>
+    <option value="Mrs. Flora Mapunda">Mrs. Flora Mapunda</option>
+    <option value="Mrs. Lightness Massawe">Mrs. Lightness Massawe</option>
+    <option value="Mr. George Luvanda">Mr. George Luvanda</option>
+</select>
+</div>
+<div class="results">
+<label>CSSE Results </label><br>
+<select name="res"required id="res">
+    <option></option>
+    <option value="I">Div I</option>
+    <option value="II">Div II</option>
+    <option value="III">Div III</option>
+    <option value="IV">Div IV</option>
+    <option value="0">Div 0</option>
+</select>
+</div>
+<div class="occ">
+<label>Current occupation:</label><br>
+<input type="text" name="occupation"id="occupation" required>
+</div>
+<div class="add">
+<label>Address:</label><br>
+<input type="text" name="address"id="address" required>
+</div>
+<div class="imail">
+<label>Email:</label><br>
+<input type="email" name="imail" id="imail" required>
+</div>
+<div class="mno">
+<label>Mobile Number: </label><br>
+<input type="text" name="mno"id="mno" required>
+</div>
+<div class="paword">
+    <label>Password:</label><br>
+    <input type="password" name="paword" id="paword" required>
+</div>
+</div>
+<br>
+<input type="submit" id="send" value="Sign Up" onsubmit="emailvalid()"><br>
+<p style="text-align: center; font-size: large; color: black;">Already have an Alumni account? <a href="alumniLogIn.html">Log In</a></p>
+        </form>
+<br>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                    <li><a href="Alumni.html">ALUMNI</a></li>
+                    <li><a href="Staff.html">STAFF</a></li>
+                    <li><a href="Tr.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/IMG_20220611_171218.jpg" id="menu">
+        </div>
+        <script>
+            var menuBtn= document.getElementById("menuBtn")
+            var sideNav= document.getElementById("sideNav")
+            var menu= document.getElementById("menu")
+            sideNav.style.right=="-250px"
+            menuBtn.onclick=function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0";
+                    menu.src="images/IMG_20220611_234657.jpg";
+                }
+                else {
+                    sideNav.style.right="-250px";
+                    menu.src="images/IMG_20220611_171218.jpg";
+                }
+            }
+        </script>
+        <div class="pSeven">
+            <p>Copyright MGHS 2017. Designed and Developed by Marian Girls' High School</p>
+         </div>
+    </body>
+</html>

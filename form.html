@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    
+        <p class="mg">Marian Girls' Alumni!</p>
+        <div class="act"><i>As an active Marian graduate you can<br> positively impact today's students, 
+            strengthen your professional<br> network, increase the  value of your knowledge 
+            and have some fun.</i></div>
+    
+        <form method="post" class="alu" action="Alumni.php">
+            <p class="create">Create Alumnus account here</p>
+            
+         <label>Alumnus Name</label><br>
+<input type="text" name="name" id="name" required>
+
+<label>Year of enrolment</label><br>
+<input type="number" min="1997" max="2022" id="yoe" required>
+
+<label>Year of graduation</label><br>
+<input type="number" min="1997" max="2022" id="yog" required>
+
+<label>Headmaster / Mistress at enrolment </label><br>
+<select name="hae" id="hae" required>
+    <option></option>
+    <option>Mrs. Beatrice Libaba</option><option>Mr. Ally Khamis </option>
+    <option>Mr. Alexander Mlai</option><option>Mrs. Flora Mapunda</option>
+    <option>Mrs. Lightness Massawe</option><option>Mr. George Luvanda</option>
+</select>
+
+<label>Headmaster / Mistress at graduation</label><br>
+<select name="hag" required id="hag">
+    <option></option>
+    <option>Mrs. Beatrice Libaba</option><option>Mr. Ally Khamis </option>
+    <option>Mr. Alexander Mlai</option><option>Mrs. Flora Mapunda</option>
+    <option>Mrs. Lightness Massawe</option><option>Mr. George Luvanda</option>
+</select>
+<label>Famous teacher at graduation</label><br>
+<select name="tag" required id="tag">
+    <option></option>
+    <option>Mrs. Beatrice Libaba</option><option>Mr. Ally Mgaza </option>
+    <option>Mr. Alexander Mlai</option><option>Mrs. Flora Mapunda</option>
+    <option>Mrs. Lightness Massawe</option><option>Mr. George Luvanda</option>
+</select>
+
+<label>CSSE Results </label><br>
+<select name="res"required id="res">
+    <option></option>
+    <option>Div I</option><option>Div II</option><option>Div III</option><option>Div IV</option>
+    <option>Div 0</option>
+</select>
+
+<label>Current occupation:</label><br>
+<input type="text" name="occupation"id="occupation" required>
+
+<label>Address:</label><br>
+<input type="text" name="address"id="address" required>
+
+<label>Email:</label><br>
+<input type="email" name="imail" id="imail" required>
+
+<label>Mobile Number: </label><br>
+<input type="text" name="mno"id="mno" required>
+
+<br>
+<input type="submit" id="send" value="Sign Up"><br>
+<p style="text-align: center; font-size: large; color: black;">Already have an Alumni account? <a href="regLogIn.html">Log In</a></p>
+        </form>
+
+</body>
+</html>

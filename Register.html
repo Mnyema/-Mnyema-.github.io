@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   <head> <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Registration MGHS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="myCSS.css">
+</head>
+<img class="imgone"
+    src="images/download (11).jpeg"alt="MGHS logo" 
+    height="100px"width="100px"><br><h1><i style="color: aliceblue; text-align: center;">Marian Girls' High School</i></h1>
+    <p class="pZero">For The Glory Of The Most High</p>
+<body class="register">
+   
+<form method="post" class="rgster"action="Register.php">
+    <p class="tengeneza"> Create User Account</p><br>
+    <div class="meza">
+      <div class="fname">
+<label>First Name</label><br>
+  <input type="text" name="fname" id="fname" required>
+</div>
+<div class="mname">
+  <label>Middle Name</label><br>
+  <input type="text" name="mname"id="mname"  required>
+</div>
+<div class="surname">
+  <label>Surname</label><br>
+  <input type="text" id="surname" name="surname" required>
+</div>
+<div class="username">
+  <label>Username</label><br>
+  <input type="text" id="username" name="username" required>
+</div>
+<div class="dob">
+  <label>Date of Birth</label><br>
+  <input type="date" id="dob" name="dob" required>
+</div>
+<div class="password">
+  <label>Password</label><br>
+  <input type="password"  name="password"id="password"  required>
+</div>
+<div class="CV">
+  <label>CV</label><br>
+  <input type="file" id="CV" name="CV" required><br>
+</div>
+<div class="mail">
+  <label>Email Address</label><br>
+  <input type="email" name="mail" id="mail" required>
+</div>
+<div class="phone">
+  <label>Phone Number</label><br>
+<input type="tel"  name="phone"id="phone" placeholder="+255 *** *** ***" required>
+</div>
+
+<div class="fb">
+<label><img src="images/images (4).png" height="30px"width="30px">Facebook</label><br>
+<input type="text" name="fb" id="username" ><br>
+</div>
+<div class="ig">
+<label><img src="images/download (13).jpeg" height="40px"width="40px">Instagram</label><br>
+<input type="text" name="ig" id="username" >
+</div>
+<div class="twt">
+<label><img src="images/images (22).jpeg" height="40px"width="40px">Twitter</label><br>
+<input type="text" name="username" id="username">
+</div>
+</div><br>
+<input type="submit" id="sbutton" value="Sign Up"><br>
+
+</form>
+<div id="sideNav">
+  <nav>
+      <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="Register.html">REGISTER</a></li>
+          <li><a href="checkAlumni.html">ALUMNI</a></li>
+          <li><a href="Staff.html">STAFF</a></li>
+          <li><a href="Tr.html">CONTACTS</a></li>
+      </ul>
+  </nav>
+</div>
+<div id="menuBtn">
+  <img src="images/IMG_20220611_171218.jpg" id="menu">
+</div>
+<script>
+  var menuBtn= document.getElementById("menuBtn")
+  var sideNav= document.getElementById("sideNav")
+  var menu= document.getElementById("menu")
+  sideNav.style.right=="-250px"
+  menuBtn.onclick=function(){
+      if(sideNav.style.right=="-250px"){
+          sideNav.style.right="0";
+          menu.src="images/IMG_20220611_234657.jpg";
+      }
+      else {
+          sideNav.style.right="-250px";
+          menu.src="images/IMG_20220611_171218.jpg";
+      }
+  }
+</script>
+<div class="pSeven">
+  <p>Copyright MGHS 2017. Designed and Developed by Marian Girls' High School</p>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In MGHS</title>
+    <link rel="stylesheet" href="myCSS.css">
+</head>
+<body class="login">
+    <div class="main">
+    <div class="Ingia">
+<form method="post" class="mm" action="login.php">
+    <h1 style="color: black;">Alumni Log In</h1>
+    <input type="email" id="email"  name="amil" placeholder="Email" required><br><br>
+    <input type="password" id="pword" name="pword" placeholder="**********" required><br><br>
+    <input type="checkbox" id="rem">
+    <label style="color: black;">Remember Me</label><br><br>
+    <input type="submit" id="smt" value="Log In">
+</form>
+    </div>
+</div>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
+            <li><a href="Alumni.html">ALUMNI</a></li>
+            <li><a href="Staff.html">STAFF</a></li>
+            <li><a href="Tr.html">CONTACTS</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/IMG_20220611_171218.jpg" id="menu">
+</div>
+<script>
+    var menuBtn= document.getElementById("menuBtn")
+    var sideNav= document.getElementById("sideNav")
+    var menu= document.getElementById("menu")
+    sideNav.style.right=="-250px"
+    menuBtn.onclick=function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right="0";
+            menu.src="images/IMG_20220611_234657.jpg";
+        }
+        else {
+            sideNav.style.right="-250px";
+            menu.src="images/IMG_20220611_171218.jpg";
+        }
+    }
+</script>
+</body>
+</html>

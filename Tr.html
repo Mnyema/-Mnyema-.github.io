@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In MGHS</title>
+    <link rel="stylesheet" href="tr.css">
+</head>
+<body>
+    <div class="maincontent">
+ <div class="up">
+    <h1>Get in touch</h1>
+    <p>We are always happy to make new contacts</p>
+ </div>
+ <div class="down"></div> 
+</div>
+<div class="middle">
+    <div class="continfo">
+        <h2 style="margin-left: 10px;">Contact Information</h2>
+        <ul>
+            <li><img src="images/IMG_20220617_132533.jpg" height="40px" width="40px">0754 669 173</li>
+            <li><img src="images/download (2).png" height="50px" width="50px">+255 232 440 118</li>
+            <li><img src="images/images (5).png" height="20px" width="20px"> P.O. Box 14, Bagamoyo</li>
+            <li><img src="images/images (4).png" height="20px"width="20px">  Facebook Page</li>
+            <li><img src="images/images (22).jpeg" height="30px"width="30px">Twitter Page</li>
+        </ul>
+    </div>
+    <div class="theform">
+    <form class="cont" method="post">
+        <h2 style="color: rgb(1, 12, 11);">Send us a Message</h2>
+        <label> Your Name</label><br>
+        <input type="text" id="name"><br>
+        <label> Email Address</label><br>
+        <input type="email" id="email"><br>
+        <label>Phone</label><br>
+        <input type="tel" id="tel"><br>
+        <label>Message</label><br>
+        <textarea></textarea><br><br>
+        <input type="submit" id="submit" value="SEND"><br><br>
+    </form>
+</div>
+</div> <br><br>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
+            <li><a href="checkAlumni.html">ALUMNI</a></li>
+            <li><a href="Staff.html">STAFF</a></li>
+            <li><a href="Tr.html">CONTACTS</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/IMG_20220611_171218.jpg" id="menu">
+</div>
+<script>
+    var menuBtn= document.getElementById("menuBtn")
+    var sideNav= document.getElementById("sideNav")
+    var menu= document.getElementById("menu")
+    sideNav.style.right=="-250px"
+    menuBtn.onclick=function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right="0";
+            menu.src="images/IMG_20220611_234657.jpg";
+        }
+        else {
+            sideNav.style.right="-250px";
+            menu.src="images/IMG_20220611_171218.jpg";
+        }
+    }
+</script>
+<div class="pSeven">
+    <p>Copyright MGHS 2017. Designed and Developed by Marian Girls' High School</p>
+ </div> 
+</body>
+</html>
