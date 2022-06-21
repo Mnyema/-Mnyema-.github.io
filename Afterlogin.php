@@ -57,3 +57,6 @@ if (mysqli_num_rows($result) > 0) {
 
  <?php } ?>
   </table>
+<div>
+    <a href="logout.php">Log Out</a>
+  </div>
